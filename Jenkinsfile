@@ -8,7 +8,7 @@
     stages {
       stage('fetch_latest_code') {
         steps {
-          git credentialsId: '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', url: 'https://github.com/dtnguyen22/azure-vm-deploy.git'
+          git url: 'https://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@github.com/dtnguyen22/azure-vm-deploy.git'
         }
       }
 
