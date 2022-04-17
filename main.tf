@@ -17,13 +17,12 @@ provider "azurerm" {
     client_secret   =   "XCGY_uH0vsQ1koAE1lzH5j~KSxmmCRGR4J"
 }
 
-/*
 resource "azurerm_resource_group" "rg" {
   name     = "myTFResourceGroup"
   location = "westus2"
 }
 
-
+/*
 resource "azurerm_virtual_network" "vnet" {
   name                = "myTFVnet"
   address_space       = ["10.0.0.0/16"]
