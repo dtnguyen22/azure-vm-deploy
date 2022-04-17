@@ -3,8 +3,15 @@
       node {
         label "agent1"
       } 
+    options {
+        skipDefaultCheckout(true)
+      }
     }
-
+    stage('clean workspace') {
+      steps {
+        cleanWs()
+      }
+    }
     stages {
       stage('fetch_latest_code') {
         steps {
