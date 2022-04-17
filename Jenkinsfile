@@ -17,7 +17,7 @@
       }
       stage('fetch_latest_code') {
         steps {
-          git url: 'https://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@github.com/dtnguyen22/azure-vm-deploy.git'
+          git branch: 'main', url: 'https://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@github.com/dtnguyen22/azure-vm-deploy.git'
         }
       }
 
