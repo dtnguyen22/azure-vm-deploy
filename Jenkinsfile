@@ -7,12 +7,13 @@
         skipDefaultCheckout(true)
       }
     }
-    stage('clean workspace') {
-      steps {
-        cleanWs()
-      }
-    }
+
     stages {
+      stage('clean workspace') {
+        steps {
+            cleanWs()
+         }
+      }
       stage('fetch_latest_code') {
         steps {
           git url: 'https://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@github.com/dtnguyen22/azure-vm-deploy.git'
