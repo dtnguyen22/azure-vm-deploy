@@ -3,9 +3,10 @@
       node {
         label "agent1"
       } 
+    }
     options {
-        skipDefaultCheckout(true)
-      }
+     skipDefaultCheckout(true)
+    }
     
 
     stages {
