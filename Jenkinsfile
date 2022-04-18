@@ -24,8 +24,8 @@
 
       stage('TF Init&Plan') {
         steps {
-          sh 'terraform init'
-          sh 'terraform plan'
+          sh 'terraform init -no-color'
+          sh 'terraform plan -no-color'
         }      
       }
 /*
