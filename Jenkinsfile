@@ -8,7 +8,6 @@
      skipDefaultCheckout(true)
     }
     
-
     stages {
       stage('clean workspace') {
         steps {
@@ -27,7 +26,7 @@
           sh 'terraform plan'
         }      
       }
-
+/*
       stage('Approval') {
         steps {
           script {
@@ -35,7 +34,7 @@
           }
         }
       }
-
+*/
       stage('TF Apply') {
         steps {
           sh 'terraform apply -auto-approve'
