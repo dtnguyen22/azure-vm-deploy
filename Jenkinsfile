@@ -4,6 +4,7 @@
         label "agent1"
       } 
     }
+    //do not checkout the code to KEEP the STATE file
     options {
      skipDefaultCheckout(true)
     }
