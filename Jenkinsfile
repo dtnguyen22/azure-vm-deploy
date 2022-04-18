@@ -7,13 +7,14 @@
     options {
      skipDefaultCheckout(true)
     }
-    
+    /*
     stages {
       stage('clean workspace') {
         steps {
             cleanWs()
          }
       }
+      */
       stage('fetch_latest_code') {
         steps {
           git branch: 'main', url: 'https://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@github.com/dtnguyen22/azure-vm-deploy.git'
