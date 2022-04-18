@@ -16,7 +16,7 @@ provider "azurerm" {
     subscription_id =   "cd187976-0dee-4a1e-b20d-f215b7e8a51d"
     client_secret   =   "XCGY_uH0vsQ1koAE1lzH5j~KSxmmCRGR4J"
 }
-/*
+
 resource "azurerm_resource_group" "rg" {
   name     = "myTFResourceGroup"
   location = "westus2"
@@ -29,7 +29,7 @@ resource "azurerm_virtual_network" "vnet" {
   location            = "westus2"
   resource_group_name = azurerm_resource_group.rg.name
 }
-
+/*
 resource   "azurerm_subnet"   "frontendsubnet"   { 
    name   =   "frontendSubnet" 
    resource_group_name   =    azurerm_resource_group.rg.name 
