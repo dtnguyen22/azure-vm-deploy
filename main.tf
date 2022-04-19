@@ -37,7 +37,7 @@ resource   "azurerm_subnet"   "frontendsubnet"   {
    address_prefixes   =   ["10.0.1.0/24"] 
 }
 
-/*
+
  resource   "azurerm_public_ip"   "myvm1publicip"   { 
    name   =   "pip1" 
    location   =   "westus2" 
@@ -79,4 +79,4 @@ resource "azurerm_windows_virtual_machine" "example" {
     storage_account_type = "Standard_LRS"
   }
 }
-*/
+
