@@ -1,7 +1,7 @@
 variable "vm_size" {
   description = "Virtual machine size"
   type        = string
-  default     = "Standard_B2ms"
+  default     = "Standard_B2s"
 }
 
 variable "prefix" {
