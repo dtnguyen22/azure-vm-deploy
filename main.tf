@@ -22,7 +22,7 @@ resource "azurerm_resource_group" "rg" {
   location = "westus2"
 }
 
-
+/*
 resource "azurerm_virtual_network" "vnet" {
   name                = "myTFVnet"
   address_space       = ["10.0.0.0/16"]
@@ -80,3 +80,4 @@ resource "azurerm_windows_virtual_machine" "example" {
   }
 }
 
+*/
