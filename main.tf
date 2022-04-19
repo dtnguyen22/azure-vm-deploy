@@ -63,7 +63,7 @@ resource "azurerm_windows_virtual_machine" "example" {
   location              = "westus2"
   resource_group_name   = azurerm_resource_group.rg.name
   network_interface_ids = [azurerm_network_interface.myvm1nic.id]
-  size                  = "Standard_B1s"
+  size                  = var.vm_size
   admin_username        = "adminuser"
   admin_password        = "Password123!"
 
