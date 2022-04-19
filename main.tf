@@ -37,6 +37,14 @@ resource "azurerm_subnet" "internal" {
   address_prefixes     = ["10.0.2.0/24"]
 }
 
+ resource   "azurerm_public_ip"   "k8s-publicip"   { 
+   name   =   "${var.prefix}pubip1" 
+   location   =   "${var.location}" 
+   resource_group_name   =   azurerm_resource_group.main.name 
+   allocation_method   =   "Dynamic" 
+   sku   =   "Basic" 
+ } 
+
 resource "azurerm_network_interface" "main" {
   name                = "${var.prefix}-nic"
   resource_group_name = azurerm_resource_group.main.name
@@ -46,6 +54,7 @@ resource "azurerm_network_interface" "main" {
     name                          = "internal"
     subnet_id                     = azurerm_subnet.internal.id
     private_ip_address_allocation = "Dynamic"
+    public_ip_address_id          = azurerm_public_ip.k8s-publicip.id
   }
 }
 
