@@ -15,3 +15,15 @@ variable "location" {
   type        = string
   default     = "Canada Central"
 }
+
+variable "username" {
+  description = "admin username"
+  type        = string
+  default     = "ubuntu"
+}
+
+variable "password" {
+  description = "admin password"
+  type        = string
+  default     = "Password123!"
+}
