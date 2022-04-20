@@ -17,7 +17,7 @@ provider "azurerm" {
     client_secret   =   "XCGY_uH0vsQ1koAE1lzH5j~KSxmmCRGR4J"
 }
 
-
+/*
 resource "azurerm_resource_group" "main" {
   name     = "${var.prefix}-resources"
   location = var.location
@@ -82,7 +82,7 @@ resource "azurerm_linux_virtual_machine" "main" {
     caching              = "ReadWrite"
   }
 }
-
+*/
 
 /*
 resource "azurerm_resource_group" "rg" {
